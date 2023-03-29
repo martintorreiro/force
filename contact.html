@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/mobile.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section class="topbar">
+      <div class="center w1000 w750 flex flex-sb">
+        <div class="flex flex-sb">
+          <i class="fa-regular fa-envelope"></i>
+          <a href="#"> name@websitename.com</a>
+          <i class="fa-solid fa-phone header-phone"></i>
+          <p>+1 2345 67855 22</p>
+        </div>
+        <div>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+    </section>
+    <header class="header">
+      <div class="center w1000 w750 w500 flex flex-sb">
+        <a><i class="fa-solid fa-chess-knight"></i>FORCE</a>
+        <nav class="menu-desplegado">
+          <ul class="flex">
+            <li><a href="./">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li class="dropdown-container" id="dropdown-container">
+              <a href="#">Dropdown</a>
+              <ul class="dropdown-menu" id="dropdown-menu">
+                <li><a href="#">item 1</a></li>
+                <li><a href="#">item 2</a></li>
+                <li><a href="#">item 3</a></li>
+                <li><a href="#">item 4</a></li>
+              </ul>
+            </li>
+            <li><a href="./contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <i class="fa-solid fa-bars menu-burguer" id="burguer-menu"></i>
+      </div>
+    </header>
+    <nav class="mobile-menu" id="mobile-menu">
+      <ul>
+        <li><a href="./">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li>
+          <a href="#">Dropdown</a>
+          <!--   <ul>
+              <li><a href="#">item 1</a></li>
+              <li><a href="#">item 2</a></li>
+              <li><a href="#">item 3</a></li>
+              <li><a href="#">item 4</a></li>
+            </ul> -->
+        </li>
+        <li><a href="./contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <section class="inner-banner">
+      <div>
+        <h3>Contact</h3>
+        <p>We create the opportunities!</p>
+      </div>
+    </section>
+
+    <section class="contact">
+      <div class="center w1000 w750 w500 flex-column flex-sb">
+        <div class="section-header">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores
+            quae porro consequatur aliquam, incidunt fugiat culpa esse aute
+            nulla. malis nulla duis fugiat culpa esse aute nulla ipsum velit
+            export irure minim illum fore
+          </p>
+        </div>
+        <div class="form-container">
+          <ul>
+            <li>
+              <div>
+                <i class="fa-solid fa-location-dot"></i>
+                <h3>ADDRESS</h3>
+              </div>
+              <address>MN-12 Lincon Street, NewYork 12356, USA</address>
+            </li>
+            <li>
+              <div>
+                <i class="fa-solid fa-phone"></i>
+                <h3>PHONE NUMBER</h3>
+              </div>
+              <a href="#">+1 2345 67890 12</a>
+            </li>
+            <li>
+              <div>
+                <i class="fa-regular fa-envelope"></i>
+                <h3>EMAIL</h3>
+              </div>
+              <a href="#">name@website.com</a>
+            </li>
+          </ul>
+
+          <form>
+            <div class="form-el">
+              <label for="nombre">Nombre</label
+              ><input
+                class="form-control form-control_text"
+                type="text"
+                id="nombre"
+              />
+            </div>
+
+            <div class="form-el">
+              <label for="consulta"> Metodo consulta</label>
+              <select class="form-control" name="consulta" id="consulta">
+                <option value="facturacion">Facturacion</option>
+                <option value="incidencia">Incidencia</option>
+                <option value="duda">Duda</option>
+              </select>
+            </div>
+            <div class="form-el">
+              <label for="mensaje"> Mensaje </label>
+              <textarea
+                class="form-control form-control_text"
+                name="mensaje"
+                id="mensaje"
+                cols="30"
+                rows="10"
+              ></textarea>
+            </div>
+            <div class="form-el form-el_check">
+              <input
+                type="checkbox"
+                id="condiciones"
+                value="acepto-condiciones"
+              />
+              <label for="condiciones">Acepto las condiciones</label>
+            </div>
+            <div class="form-el form-el_check">
+              <input type="radio" name="autorizo" value="si" id="radio-si" />
+              <label for="radio-si">Autorizo</label>
+            </div>
+            <div class="form-el form-el_check">
+              <input type="radio" name="autorizo" value="no" id="radio-no" />
+              <label for="radio-no">No autorizo</label>
+            </div>
+            <button>Enviar</button>
+          </form>
+        </div>
+        <div class="mapa-container">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d11748.158385492987!2d-8.759141800000002!3d42.5969034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2ses!4v1670610525970!5m2!1ses!2ses"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            class="mapa"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <p>© Copyright <strong>FORCE.</strong> All Rights Reserved</p>
+      <p>Template by <a href="#">WebThemez</a></p>
+    </footer>
+    <script src="js/menu.js"></script>
+  </body>
+</html>
